@@ -28,10 +28,11 @@ function deretKaskus(n){
         result.push(count);
     }
         count+=3;
-    }while(count<=n);
+        n--;
+    }while(n>0);
 
     console.log(result);
 }
 
 
-deretKaskus(30);
+deretKaskus(10);
