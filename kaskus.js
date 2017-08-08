@@ -16,18 +16,21 @@
 
 function deretKaskus(n){
     var count = 3;
+    var result = [];
     do{
         if(count % 5 === 0 && count% 6 === 0){
-        console.log("KASKUS");
+        result.push("KASKUS");
     }else if(count % 5 === 0){
-        console.log("KAS");
+        result.push("KAS");
     }else if(count%6 ===0){
-        console.log("KUS");
+        result.push("KUS");
     }else{
-        console.log(count);
+        result.push(count);
     }
         count+=3;
     }while(count<=n);
+
+    console.log(result);
 }
 
 
